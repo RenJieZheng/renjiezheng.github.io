@@ -29,11 +29,10 @@ nav {
 
 main {
     max-width: 975px;
-    margin: 25px auto 0px auto;
+    margin: auto;
 }
 
 #home {
-    padding: 0;
     height: 95vh;
     max-height: 800px;
     display: flex;
