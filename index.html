@@ -11,10 +11,12 @@
     </head>
     <body>
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about-me">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <div id="nav-options-container">
+                <a href="#home">Home</a>
+                <a href="#about-me">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
         </nav>
         <main>
             <section id="home">
@@ -30,6 +32,7 @@
                     Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
                 </p>
             </section>
+            <div id="projects-anchor"></div>
             <section id="projects">
                 <h2>Projects</h2>
                 <div class="card">
@@ -68,5 +71,8 @@
                 <button type="button" onclick="window.location.href='./resume.pdf'">Resume</button>
             </section>
         </main>
+        <footer>
+            <p>Ren Jie Zheng</p>
+        </footer>
     </body>
 </html>
