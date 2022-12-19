@@ -7,6 +7,8 @@ html {
 body {
     width: 100%;
     margin: auto;
+    font: 300;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav {
@@ -15,8 +17,7 @@ nav {
     width: 100%;
     height: 5vh;
     padding: 10px 0px;
-    background-color: white;
-    box-shadow: 0px 2px 2px rgb(225, 225, 225);
+    background-color: rgb(50, 50, 50);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,18 +28,64 @@ nav {
     max-width: 975px;
 }
 
-main {
-    max-width: 975px;
-    margin: auto;
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin: 5px;
+}
+
+nav a:hover {
+    background-color: rgb(0, 0, 0);
 }
 
 #home {
     height: 95vh;
-    max-height: 800px;
+
+    color: white;
+    background-color: black;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center ;
+}
+
+#home h1 {
+    font-size: 7rem;
+}
+
+#home button {
+    padding: 10px;
+    margin: 10px 20px;
+    width: 180px;
+
+    font-size: large;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 0px;
+    border-style: none;
+}
+
+#home button a {
+    text-decoration: none;
+    color: black;
+}
+
+#home button:hover {
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+#home button:hover a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
 }
 
 section {
@@ -55,5 +102,9 @@ footer p {
     margin: auto;
 }
 
-
+.card {
+    background-color: grey;
+    padding: 20px;
+    margin: 20px 0px;
+}
 
