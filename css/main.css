@@ -40,7 +40,7 @@ nav a:hover {
 }
 
 #home {
-    height: 95vh;
+    height: 92vh;
 
     color: white;
     background-color: black;
@@ -52,7 +52,12 @@ nav a:hover {
 }
 
 #home h1 {
-    font-size: 7rem;
+    font-size: 6rem;
+    margin-bottom: 5px;
+}
+
+#home h2 {
+    margin-bottom: 50px;
 }
 
 #home button {
