@@ -12,21 +12,23 @@
     <body>
         <nav>
             <div id="nav-options-container">
-                <a href="#home">Home</a>
-                <a href="#about-me">About Me</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <a href="#home-section">Home</a>
+                <a href="#about-me-section">About Me</a>
+                <a href="#projects-section">Projects</a>
+                <a href="#contact-section">Contact</a>
             </div>
         </nav>
+        <div class="anchor" id="home-section"></div>
         <section id="home">
             <h1>Ren Jie Zheng</h1>
             <h2>Software Developer</h2>
             <div class="buttons">
-                <button><a href="#about-me">About Me</a></button>
+                <button onClick="document.getElementById('about-me-section').scrollIntoView();">About Me</button>
                 <button type="button" onclick="window.location.href='./resume.pdf'">Resume</button>
             </div>
         </section>
         <main>
+            <div class="anchor" id="about-me-section"></div>
             <section id="about-me">
                 <h1>About Me</h1>
                 <p>
@@ -35,7 +37,7 @@
                     Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
                 </p>
             </section>
-            <div id="projects-anchor"></div>
+            <div class="anchor" id="projects-section"></div>
             <section id="projects">
                 <h2>Projects</h2>
                 <div class="card">
@@ -66,16 +68,17 @@
                     </p>
                 </div>
             </section>
+            <div class="anchor" id="contact-section"></div>
             <section id="contact">
                 <h2>Contact Information</h2>
-                <p>Email</p>
-                <p>Phone</p>
-                <p>LinkedIn</p>
+                <p>Email: renjie_zheng@outlook.com | rjzheng@uwaterloo.ca</p>
+                <p>Github: Comming Soon</p>
+                <p>LinkedIn: Comming Soon</p>
                 <button type="button" onclick="window.location.href='./resume.pdf'">Resume</button>
             </section>
         </main>
         <footer>
-            <p>Ren Jie Zheng</p>
+            <p>© 2022 Ren Jie Zheng </p>
         </footer>
     </body>
 </html>

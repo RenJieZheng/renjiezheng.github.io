@@ -73,18 +73,8 @@ nav a:hover {
     border-style: none;
 }
 
-#home button a {
-    text-decoration: none;
-    color: black;
-}
-
 #home button:hover {
     background-color: rgb(50, 50, 50);
-    color: white;
-}
-
-#home button:hover a {
-    text-decoration: none;
     color: white;
 }
 
@@ -93,23 +83,61 @@ main {
     margin: auto;
 }
 
-section {
+.anchor {
     padding-top: 8vh;
 }
 
+section {
+    border-top: solid;
+    border-color: black;
+}
+
+#home-section {
+    background-color: black;
+}
+
+#about-me {
+
+}
+
 #contact {
-    height: 500px;
+    margin-bottom: 8vh;
+}
+
+#contact button {
+    padding: 5px 20px;
+    margin: 10px 0px;
+
+    font-size: large;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 0px;
+    border-style: none;
+}
+
+#contact button:hover {
+    background-color: rgb(200, 200, 200);
+    color: black;
+}
+
+footer {
+    background-color: black;
 }
 
 footer p {
     padding: 50px 0;
-    max-width: 975px;
+    max-width: 1200px;
     margin: auto;
+
+    color: white;
 }
 
 .card {
-    background-color: grey;
+    background-color: white;
     padding: 20px;
     margin: 20px 0px;
+    border: solid;
+    border-color: black;
+    box-shadow: 10px 10px;
 }
-
