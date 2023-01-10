@@ -22,6 +22,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 5;
 }
 
 #nav-options-container {
@@ -33,6 +34,7 @@ nav a {
     text-decoration: none;
     padding: 15px;
     margin: 5px;
+    z-index: 6;
 }
 
 nav a:hover {
@@ -139,5 +141,11 @@ footer p {
     margin: 20px 0px;
     border: solid;
     border-color: black;
-    box-shadow: 10px 10px;
+    /* box-shadow: 10px 10px; */
+    transition: 0.2s;
+}
+
+.card:hover {
+    box-shadow: -10px 10px;
+    transform: translate(10px, -10px);
 }
