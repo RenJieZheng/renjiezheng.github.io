@@ -1,5 +1,5 @@
 /*
-Color Palette: 1e274b, bbeff5, 67a0e2
+Color Palette: 1e274b, c0dff3, 67a0e2
 */
 
 html {
@@ -58,8 +58,9 @@ Home section
 
 #home {
     height: 92vh;
-    color: #1e274b;
-    background-image: conic-gradient(#67a0e2, #bbeff5, #67a0e2, #bbeff5, #67a0e2);
+    color: white;
+    background-image: linear-gradient(#1e274b, #5a7dc7, #c0dff3);
+    /*conic-gradient(#67a0e2, #bbeff5, #67a0e2, #bbeff5, #67a0e2);*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,20 +108,22 @@ main {
 #about-me {
     margin-top: 1vh;
     padding: 20px 20px 60px 20px;
-    border-style: dashed;
-    border-width: 5px;
+    border-style: solid;
+    border-color: #1e274b;
+    border-width: 2px;
 }
 
 #projects {
+    margin-top: 1vh;
     padding: 20px;
-    border-style: solid;
-    border-width: 3px;
+    background-color: #c0dff3;
 }
 
 #contact {
     margin-bottom: 8vh;
-    border-style: dashed;
-    border-width: 5px;
+    border-style: solid;
+    border-color: #1e274b;
+    border-width: 2px;
     padding: 20px;
 }
 
@@ -160,13 +163,13 @@ Project cards
     padding: 20px;
     margin: 20px 0px;
     border: solid;
-    border-color: black;
+    border-color: #1e274b;
     border-width: 3px;
     transition: 0.2s;
 }
 
 .card:hover {
-    box-shadow: -7.5px 7.5px;
+    box-shadow: -7.5px 7.5px #1e274b;
     transform: translate(7.5px, -7.5px);
 }
 
