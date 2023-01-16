@@ -126,14 +126,14 @@ main {
     font-size: large;
     text-decoration: none;
     color: white;
-    background-color: black;
+    background-color: #1e274b;
     border-radius: 0px;
     border-style: none;
     transition: 0.2s;
 }
 
 #contact button:hover {
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(150, 150, 150);
     color: black;
 }
 
