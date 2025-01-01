@@ -11,13 +11,34 @@ body {
     align-items: start;
 }
 
+nav a {
+    padding-right: 10px;
+}
+
+#pixels {
+    box-sizing: content-box;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 60%;
+    padding: 2rem;
+    z-index: -1;
+}
+
+.pixel {
+    background-color: #000;
+    float: left;
+}
+
 @media (max-width: 600px) {
     nav {
         display: flex;
         flex-direction: column;
     }
-}
 
-nav a {
-    padding-right: 10px;
+    #pixels {
+        width: 60%;
+        height: 50%;
+    }
 }
