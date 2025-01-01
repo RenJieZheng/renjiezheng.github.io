@@ -12,19 +12,21 @@ html {
 
 body {
     font-family: "Inconsolata", serif;
+    background-color: #f0ede9;
+    color: #1b1c1f;
 }
 
 a {
-    color: #000;
+    color: #1b1c1f;
 }
 
 body.dark-mode {
-    background-color: #000;
-    color: #fff;
+    background-color: #1b1c1f;
+    color: #f0ede9;
 }
 
 body.dark-mode a {
-    color: #fff;
+    color: #f0ede9;
 }
 
 
