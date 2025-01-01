@@ -2,9 +2,10 @@ body {
     width: 100;
     max-width: 1000px;
     margin: auto;
-    padding: 2em;
+    padding: 2rem;
 }
 
 h1 {
     font-size: 3em;
+    padding-bottom: 0.5em;
 }
