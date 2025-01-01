@@ -1,2 +1,1 @@
-# Personal portfolio website
-In Progress
+# Personal website
