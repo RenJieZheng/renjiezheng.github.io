@@ -17,3 +17,31 @@ body {
 a {
     color: #000;
 }
+
+body.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+body.dark-mode a {
+    color: #fff;
+}
+
+
+#theme-toggle {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+#theme-toggle p {
+    font-size: 1rem;
+    text-decoration: underline;
+}

@@ -3,7 +3,7 @@ body {
 
     height: 100vh;
 
-    padding: 1.5rem;
+    padding: 1.75rem;
 
     display: flex;  
     flex-direction: column;
@@ -29,6 +29,10 @@ nav a {
 .pixel {
     background-color: #000;
     float: left;
+}
+
+body.dark-mode .pixel {
+    background-color: #fff;
 }
 
 @media (max-width: 600px) {
