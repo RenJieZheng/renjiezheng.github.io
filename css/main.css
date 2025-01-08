@@ -31,7 +31,7 @@ body.dark-mode a {
 
 
 #theme-toggle {
-    position: absolute;
+    position: fixed;
     bottom: 2rem;
     right: 2rem;
     background: none;
@@ -41,6 +41,12 @@ body.dark-mode a {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+    background-color: #f0ede9;
+    padding: 3px;
+}
+
+body.dark-mode #theme-toggle {
+    background-color: #1b1c1f;
 }
 
 #theme-toggle p {
