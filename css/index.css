@@ -27,12 +27,12 @@ nav a {
 }
 
 .pixel {
-    background-color: #000;
+    background-color: #1b1c1f;
     float: left;
 }
 
 body.dark-mode .pixel {
-    background-color: #fff;
+    background-color: #f0ede9;
 }
 
 @media (max-width: 600px) {
