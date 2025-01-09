@@ -11,7 +11,7 @@ body.dark-mode .card {
     border-color: #f0ede9;
 }
 
-.card:hover {
+/* .card:hover {
     box-shadow: -3px 3px #1b1c1f;
     transform: translate(3px, -3px);
 }
@@ -19,4 +19,4 @@ body.dark-mode .card {
 body.dark-mode .card:hover {
     box-shadow: -3px 3px #f0ede9;
     transform: translate(3px, -3px);
-}
+} */
