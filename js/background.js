@@ -1,10 +1,10 @@
-function handleResize() {
-    const pixels = document.getElementById('pixels');
+const pixels = document.getElementById('pixels');
+
+const fillBackground = () => {
     pixels.innerHTML = '';
     pixels.style['width'] = '';
-    const fragment = document.createDocumentFragment();
-    const rect = pixels.getBoundingClientRect();
 
+    const rect = pixels.getBoundingClientRect();
     const style = window.getComputedStyle(pixels);
     const padding = {
         left: parseFloat(style.paddingLeft),
@@ -12,37 +12,33 @@ function handleResize() {
         top: parseFloat(style.paddingTop),
         bottom: parseFloat(style.paddingBottom)
     };
+    
     const availableWidth = rect.width - padding.left - padding.right;
     const availableHeight = rect.height - padding.top - padding.bottom;
-
-    const grid = window.matchMedia("(max-width: 600px)").matches ? 25 : 80;
-
-    let newWidth = Math.ceil(availableWidth / grid) * grid
-    pixels.style['width'] = `${newWidth}px`;
-
-    let pixelSize = newWidth / grid;
-    let cols = newWidth / pixelSize;
+    let cols = window.matchMedia("(max-width: 600px)").matches ? 15 : 50;
+    let width = Math.floor(availableWidth / cols) * cols;
+    let pixelSize = width / cols;
     let rows = Math.floor(availableHeight / pixelSize);
 
+    pixels.style['width'] = `${width}px`;
+    
+    const fragment = document.createDocumentFragment();
     for (let r = 0; r < rows; r++) {
         for (let p = 0; p < cols; p++) {
-            const pixelDiv = document.createElement('div');
-            pixelDiv.classList.add('pixel');
-            pixelDiv.style.height = `${pixelSize}px`;
-            pixelDiv.style.width = `${pixelSize}px`;
+            const pixel = document.createElement('div');
+            pixel.classList.add('pixel');
+            pixel.style.height = `${pixelSize}px`;
+            pixel.style.width = `${pixelSize}px`;
 
-            let randomNumber = Math.random()
-            let prob = (1 - (r / rows)) * (p / grid);
-            pixelDiv.style.opacity = randomNumber < prob ? '1' : '0';
+            let prob = (1 - (r / rows)) * (p / cols);
+            pixel.style.opacity = Math.random() < prob ? '1' : '0';
     
-            fragment.appendChild(pixelDiv);
+            fragment.appendChild(pixel);
         }
     }
 
     pixels.appendChild(fragment);
-
-    console.log("resized");
 }
 
-onresize = (event) => { handleResize(); console.log(".") };
-handleResize();
+window.addEventListener('resize', fillBackground);
+fillBackground();
